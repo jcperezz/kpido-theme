@@ -26,7 +26,10 @@
     <link href="assets/vendor/swiper/css/swiper.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/style-red.css" rel="stylesheet" id="style">
+    <link href="assets/css/style-purple.css" rel="stylesheet" id="style">
+
+    <!-- Custom styles for kpido template -->
+    <link href="assets/css/kpido.css" rel="stylesheet" id="style">
 </head>
 
 <body class="ui-rounded">
@@ -59,7 +62,7 @@
     </div>
     <!-- Page laoder ends -->
 
-    <!-- Fixed navbar -->
+    <!-- Fixed navbar 
     <header class="header fixed-top">
         <nav class="navbar">
             <div>
@@ -82,10 +85,10 @@
                 <a href="profile.html" class=""><span class="avatar avatar-30"><img src="assets/img/user1.png" alt=""></span></a>
             </div>
         </nav>
-    </header>
+    </header> -->
     <!-- Fixed navbar ends -->
 
-    <!-- sidebar -->
+    <!-- sidebar 
     <div class="sidebar">
         <div class="row no-gutters">
             <div class="col-auto align-self-center">
@@ -110,11 +113,29 @@
             <a href="setting.html" class="list-group-item list-group-item-action"><i class="material-icons">account_circle</i>Setting</a>
             <a href="aboutus.html" class="list-group-item list-group-item-action"><i class="material-icons">business</i>About</a>
         </div>
-    </div>
+    </div> -->
     <!-- sidebar ends -->
 
     <!-- Begin page content -->
-    <main class="flex-shrink-0 main-container pb-0">
+    <main class="flex-shrink-0 main-container pb-0 kpido_no_padding_top">
+
+        <!-- restaurant header goes here -->
+        <div class="position-relative overflow-hidden h-200">
+            <div class="background">
+                <img src="assets/img/food1.jpg" alt="">
+            </div>
+        </div>
+        <div class="container top-100 text-center mb-4">
+            <figure class="avatar avatar-180 rounded-circle shadow  mx-auto">
+                <img src="assets/img/logo1.png" alt="">
+            </figure>
+        </div>
+        <div class="container-fluid text-center mb-4">
+            <h4>Mi Restaurante</h4>
+            <p class="text-mute">Medellín, Colombia.</p>
+        </div>
+
+
         <!-- page content goes here -->
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -184,10 +205,16 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Add Scrollbar -->
+                    <div class="swiper-categories-scrollbar"></div>
                 </div>
+                <!-- search input goes here  
                 <div class="container mb-4">
                     <input type="text" class="form-control border-0 shadow-light" placeholder="Search here...">
                 </div>
+                -->
+
+                <!-- swiper product off goes here
                 <div class="container mb-4">
                     <div class="swiper-container swiper-offers">
                         <div class="swiper-wrapper">
@@ -245,6 +272,8 @@
                         </div>
                     </div>
                 </div>
+                -->
+
                 <div class="container">
                     <h6 class="page-subtitle">Popular food <a href="#" class="btn btn-sm float-right px-0">View all</a></h6>
                     <div class="row">
@@ -257,7 +286,7 @@
                                             <img src="assets/img/banner.png" alt="">
                                         </div>
                                     </div>
-                                    <h6 class="text-default">Kings Burger</h6>
+                                    <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Kings Burger</a></p>
                                     <p class="small">Delicious Taste <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
                                     <div class="row">
                                         <div class="col text-left">
@@ -277,7 +306,7 @@
                                             <img src="assets/img/banner2.png" alt="">
                                         </div>
                                     </div>
-                                    <h6 class="text-default">Pizza Special</h6>
+                                    <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Pizza Special</a></p>
                                     <p class="small">Hand Tosted <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
                                     <div class="row">
                                         <div class="col text-left">
@@ -297,7 +326,7 @@
                                             <img src="assets/img/banner1.png" alt="">
                                         </div>
                                     </div>
-                                    <h6 class="text-default">Kings Meal</h6>
+                                    <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Kings Meal</a></p>
                                     <p class="small">Amzaing Spices <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
                                     <div class="row">
                                         <div class="col text-left">
@@ -317,7 +346,7 @@
                                             <img src="assets/img/banner.png" alt="">
                                         </div>
                                     </div>
-                                    <h6 class="text-default">Kings Burger</h6>
+                                    <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Queens Burger</a></p>
                                     <p class="small">Delicious Taste <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
                                     <div class="row">
                                         <div class="col text-left">
@@ -343,8 +372,8 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <p class="mb-1"><a href="#" class="text-default">Food Meal</a></p>
-                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span> <span class="text-mute">128 reviews </span> </p>
+                                    <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Food Meal</a></p>
+                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>                                        <span class="text-mute">128 reviews </span> </p>
                                     <div class="row">
                                         <div class="col text-left">
                                             <p class="text-success my-0">$ 48<sup>.00</sup></p>
@@ -367,7 +396,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="mb-1"><a href="#" class="text-default">King Large burger</a></p>
-                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span> <span class="text-mute">128 reviews </span> </p>
+                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>                                        <span class="text-mute">128 reviews </span> </p>
                                     <div class="row">
                                         <div class="col text-left">
                                             <p class="text-success my-0">$ 28<sup>.00</sup></p>
@@ -390,7 +419,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="mb-1"><a href="#" class="text-default">Large Pizaa</a></p>
-                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span> <span class="text-mute">120 reviews</span></p>
+                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>                                        <span class="text-mute">120 reviews</span></p>
                                     <div class="row">
                                         <div class="col text-left">
                                             <p class="text-success my-0">$ 28<sup>.00</sup></p>
@@ -510,7 +539,7 @@
                                             <img src="assets/img/banner.png" alt="">
                                         </div>
                                     </div>
-                                    <h6 class="text-default">Kings Burger</h6>
+                                    <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Kings Burger</a></p>
                                     <p class="small">Delicious Taste <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
                                     <div class="row">
                                         <div class="col text-left">
@@ -530,7 +559,7 @@
                                             <img src="assets/img/banner2.png" alt="">
                                         </div>
                                     </div>
-                                    <h6 class="text-default">Pizza Special</h6>
+                                    <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Pizza Special</a></p>
                                     <p class="small">Hand Tosted <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
                                     <div class="row">
                                         <div class="col text-left">
@@ -554,7 +583,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="mb-1"><a href="#" class="text-default">Food Meal</a></p>
-                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span> <span class="text-mute">128 reviews </span> </p>
+                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>                                        <span class="text-mute">128 reviews </span> </p>
                                     <div class="row">
                                         <div class="col text-left">
                                             <p class="text-success my-0">$ 48<sup>.00</sup></p>
@@ -577,7 +606,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="mb-1"><a href="#" class="text-default">King Large burger</a></p>
-                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span> <span class="text-mute">128 reviews </span> </p>
+                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>                                        <span class="text-mute">128 reviews </span> </p>
                                     <div class="row">
                                         <div class="col text-left">
                                             <p class="text-success my-0">$ 28<sup>.00</sup></p>
@@ -600,7 +629,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="mb-1"><a href="#" class="text-default">Large Pizaa</a></p>
-                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span> <span class="text-mute">120 reviews</span></p>
+                                    <p class="mb-2 small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>                                        <span class="text-mute">120 reviews</span></p>
                                     <div class="row">
                                         <div class="col text-left">
                                             <p class="text-success my-0">$ 28<sup>.00</sup></p>
@@ -858,7 +887,8 @@
                                 </div>
                             </div>
                             <h6 class="page-subtitle"><span>About</span></h6>
-                            <p class="text-mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua.</p>                            
+                            <p class="text-mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="tab-pane fade " id="myorders" role="tabpanel" aria-labelledby="myorders-tab">
                             <div class="row">
@@ -911,7 +941,7 @@
                                                     <img src="assets/img/banner1.png" alt="">
                                                 </div>
                                             </div>
-                                            <h6 class="text-default">Kings Meal</h6>
+                                            <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Kings Meal</a></p>
                                             <p class="small">Amzaing Spices <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
                                             <div class="row">
                                                 <div class="col text-left">
@@ -931,8 +961,10 @@
                                                     <img src="assets/img/banner.png" alt="">
                                                 </div>
                                             </div>
-                                            <h6 class="text-default">Kings Burger</h6>
-                                            <p class="small">Delicious Taste <br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></p>
+                                            <p class="mb-1"><a href="#" class="text-default" data-toggle="modal" data-target="#modalProductDetails">Queens Burger</a></p>
+                                            <p class="small">Delicious Taste<br><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>
+                                                <span class="text-warning icon_star"></span>
+                                            </p>
                                             <div class="row">
                                                 <div class="col text-left">
                                                     <p class="text-success my-0">$ 12<sup>.00</sup></p>
@@ -948,6 +980,121 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- modal product details goes here -->
+        <div class="modal fade" id="modalProductDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="card border-0 shadow-light mb-4">
+                            <div class="card-body position-relative">
+                                <div class="top-right mt-2"><button class="btn btn-link text-danger p-0"><i class="material-icons text-danger vm">favorite</i></button></div>
+                                <h4 class="text-default">Kings Burger</h4>
+                                <p class="mb-1">Delicious Taste</p>
+                                <p class="text-mute small"><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>                                    125 reviews, 25 Feedback </p>
+                                <div class="row mb-4">
+                                    <div class="col text-left">
+                                        <h4 class="text-success">$ 28<sup>.00</sup></h4>
+                                        <div class="input-group mt-2 text-center increasenumber">
+                                            <div class="input-group-prepend ">
+                                                <button class="btn btn-sm btn-outline-default px-3 remove" type="button">-</button>
+                                            </div>
+                                            <input type="text" class="form-control form-control-sm text-center w-50px" placeholder="" value="2">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-sm btn-outline-default px-3 add" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto align-self-end"><button class="btn btn-sm btn-default"><i class="material-icons">shopping_basket</i> Add</button></div>
+                                </div>
+                                <ul class="nav nav-tabs nav-fill justift-content-center mb-4" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Review</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active was-validated " id="details" role="tabpanel" aria-labelledby="details-tab">
+                                        <h5 class="subtitle">Product Information</h5>
+                                        <p class="text-mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id eros in eros placerat varius sit amet vitae quam. Nullam at nibh hendrerit, fermentum mauris in, rutrum tellus. Sed rutrum congue nisl, id luctus
+                                            turpis lobortis et. Quisque iaculis viverra nunc in vestibulum. Fusce tristique orci turpis. In gravida gravida gravida. Etiam at gravida sapien. Cras commodo, sapien sit amet hendrerit elementum, diam purus
+                                            rhoncus justo, et porta tellus massa nec justo. Quisque luctus risus id est commodo varius.
+                                        </p>
+                                        <p class="text-mute">Nunc sit amet magna auctor massa pulvinar commodo ac non neque. Vivamus cursus commodo dolor placerat sagittis. Sed laoreet efficitur nisl, viverra consectetur diam venenatis mollis. Suspendisse nec nunc eget elit
+                                            tempus consectetur. Pellentesque congue a magna et rutrum. In euismod sed ante non porta. Nunc vel mi et metus gravida malesuada. Nam sollicitudin semper tortor, id faucibus arcu interdum eget.</p>
+                                    </div>
+                                    <div class="tab-pane fade " id="review" role="tabpanel" aria-labelledby="review-tab">
+                                        <div class="card mb-4">
+                                            <div class="card-header border-0">
+                                                <p>"Best product item and taste very fast and excellent packaging I am loving it. Thats awesome set for packaging with sppon and fork."</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="media">
+                                                    <figure class="avatar avatar-40 mr-2">
+                                                        <img src="assets/img/user3.png" alt="Generic placeholder image">
+                                                    </figure>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Johnson Johny</h6>
+                                                        <p class="text-mute small">
+                                                            Vennama, USA | <span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>
+                                                            <span class="text-warning icon_star"></span> 5.0 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-4">
+                                            <div class="card-header border-0">
+                                                <p>"Working with John is awesome and we have done several project together. He will surely surprise what outcome will be delivered."</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="media">
+                                                    <figure class="avatar avatar-40 mr-2">
+                                                        <img src="assets/img/user5.png" alt="Generic placeholder image">
+                                                    </figure>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Maxi Artisty </h6>
+                                                        <p class="text-mute small">
+                                                            Vennama, USA | <span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>
+                                                            <span class="text-warning icon_star"></span> 4.5 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-4">
+                                            <div class="card-body p-0">
+                                                <textarea class="form-control border-0" rows="3" placeholder="Enter your feedback..."></textarea>
+                                            </div>
+                                            <div class="card-footer">
+                                                <h5><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="media">
+                                                    <figure class="avatar avatar-40 mr-2">
+                                                        <img src="assets/img/user1.png" alt="Generic placeholder image">
+                                                    </figure>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">you</h6>
+                                                        <p class="text-mute small">Vennama, USA </p>
+                                                    </div>
+                                                    <button class="btn btn-44 btn-default" type="button"><i class="material-icons">send</i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal product details  ends -->
 
         <div class="toast bottom-right position-fixed mb-5" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
             <div class="toast-header">
@@ -1034,7 +1181,7 @@
     <button type="button" class="btn btn-default default-shadow scrollup bottom-right position-fixed btn-44"><span class="arrow_carrot-up"></span></button>
     <!-- scroll to top button ends-->
 
-    <!-- Color settings -->
+    <!-- Color settings 
     <button type="button" class="btn btn-light shadow-sm colorsettings bottom-right"><span class="icon_cog"></span></button>
     <div class="sidebar-right">
         <div class="card h-100 border-0 rounded-0">
@@ -1107,6 +1254,7 @@
             </div>
         </div>
     </div>
+    -->
     <!-- color settings ends -->
 
     <!-- Required jquery and libraries -->
@@ -1135,6 +1283,10 @@
                 slidesPerView: 'auto',
                 spaceBetween: 0,
                 pagination: false,
+                scrollbar: {
+                    el: '.swiper-categories-scrollbar',
+                    hide: true,
+                },
             });
             var swiper = new Swiper('.swiper-offers', {
                 slidesPerView: 'auto',
@@ -1165,7 +1317,6 @@
             });
 
         });
-
     </script>
 </body>
 
