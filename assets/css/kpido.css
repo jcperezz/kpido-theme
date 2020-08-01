@@ -1,3 +1,9 @@
 .kpido_no_padding_top {
     padding-top: 0px !important;
 }
+
+.badge-cart {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -55px;
+}
