@@ -275,7 +275,7 @@
                 -->
 
                 <div class="container">
-                    <h6 class="page-subtitle">Popular food <a href="#" class="btn btn-sm float-right px-0">View all</a></h6>
+                    <h6 class="page-subtitle">Popular food</h6>
                     <div class="row">
                         <div class="col-6 col-md-3">
                             <div class="card border-0 shadow-light text-center mb-4">
@@ -732,6 +732,201 @@
 
         </div>
 
+
+        <!-- Modal auto-service Starts Here -->
+        <div class="modal fade" id="modalAutoService" tabindex="-1" role="dialog" aria-labelledby="modalAutoService" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Recoger en restaurante</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container mb-4">
+                            <div class="card border-0 shadow-light mb-4">
+                                <div class="card-body">
+                                    <p>Realiza tu orden aunque estés en camino y cuando llegues pregunta por la orden a tu nombre</p>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre (Opcional)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Método de pago</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Efectivo</option>
+                                          <option>Tarjeta débito</option>
+                                          <option>Tarjeta crédito</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Comentarios (Opcional)</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="card-body text-center">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal auto-service Ends Here -->
+
+        <!-- Modal delivery Starts Here -->
+        <div class="modal fade" id="modalDelivery" tabindex="-1" role="dialog" aria-labelledby="modalDelivery" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Envío a domicilio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container mb-4">
+                            <div class="card border-0 shadow-light mb-4">
+                                <div class="card-body">
+                                    <p>Realiza tu orden desde tu casa y apenas esté lista la llevaremos la dirección que nos proporcionaste</p>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput2">Dirección</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Calle siempre viva 777">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Método de pago</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                  <option>Efectivo</option>
+                                                  <option>Tarjeta débito</option>
+                                                  <option>Tarjeta crédito</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Comentarios (Opcional)</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="card-body text-center">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal delivery Ends Here -->
+
+
+        <!-- Modal on-site Starts Here -->
+        <div class="modal fade" id="modalOnSite" tabindex="-1" role="dialog" aria-labelledby="modalOnSite" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Pedir orden al mesero</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container mb-4">
+                            <div class="card border-0 shadow-light mb-4">
+                                <div class="card-body">
+                                    <p>Realiza tu orden aunque estés en camino y cuando llegues pregunta por la orden a tu nombre</p>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre (Opcional)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput2">Número de Mesa</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Método de pago</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                          <option>Efectivo</option>
+                                                          <option>Tarjeta débito</option>
+                                                          <option>Tarjeta crédito</option>
+                                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Comentarios (Opcional)</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="card-body text-center">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal delivery Ends Here -->
+
+        <!-- Modal location Starts Here -->
+        <div class="modal fade" id="modalLocation" tabindex="-1" role="dialog" aria-labelledby="modalLocation" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Mi Restaurante</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container mb-4">
+                            <div class="card border-0 shadow-light mb-4">
+                                <div class="card-body">
+                                    <a href="https://maps.google.com/?q=Alameda 78 Roma, Benito Juarez, 01234, CDMX, México." class="btn-link" target="_blank" rel="noopener noreferrer">
+                                        <i class="material-icons">room</i> Alameda 78 Roma, Benito Juarez, 01234, CDMX, México.
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="tel:5550531480" class="btn-link"><i class="material-icons">phone</i> 5550531480</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mb-4">
+                            <div class="card border-0 shadow-light mb-4">
+                                <div class="card-body">
+                                    <h5>Horarios</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Lunes a viernes de 11 am a 10 pm</li>
+                                        <li class="list-group-item">Sábados, domingos y festivos de 12 m a 1 am</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="card-body text-center">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal location Ends Here -->
+
+
+
         <!-- Modal Cart Starts Here -->
         <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCart" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -825,10 +1020,12 @@
 
                     </div>
                     <div class="modal-footer">
-                        <div class="card-body">
-                            <a href="auto-service-form.html" class="btn btn-lg btn-default default-shadow">Recoger</a>
-                            <a href="delivery-form.html" class="btn btn-lg btn-default default-shadow">Domicilio</a>
-                            <a href="on-site-form.html" class="btn btn-lg btn-default default-shadow">En mi mesa</a>
+                        <div class="card-body text-center">
+
+                            <a href="#auto-service" data-dismiss="modal" data-toggle="modal" data-target="#modalAutoService" class="btn btn-default default-shadow">Recoger</a>
+                            <a href="#deliver" data-dismiss="modal" data-toggle="modal" data-target="#modalDelivery" class="btn btn-default default-shadow">Domicilio</a>
+                            <a href="#on-site" data-dismiss="modal" data-toggle="modal" data-target="#modalOnSite" class="btn btn-default default-shadow">En mi mesa</a>
+
                         </div>
                     </div>
                 </div>
@@ -866,38 +1063,17 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-                                <!--
-                                <div class="row mb-4">
-                                    <div class="col text-left">
-                                        <h4 class="text-success">$ 28<sup>.00</sup></h4>
-                                        <div class="input-group mt-2 text-center increasenumber">
-                                            <div class="input-group-prepend ">
-                                                <button class="btn btn-sm btn-outline-default px-3 remove" type="button">-</button>
-                                            </div>
-                                            <input type="text" class="form-control form-control-sm text-center w-50px" placeholder="" value="2">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-sm btn-outline-default px-3 add" type="button">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto align-self-end"><button class="btn btn-sm btn-default"><i class="material-icons">shopping_basket</i> Add</button></div>
-                                </div>
-                            -->
-
-
                                 <ul class="nav nav-tabs nav-fill justift-content-center mb-4" id="myTab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Details</a>
+                                        <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Adicionales</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Review</a>
+                                        <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Notas</a>
                                     </li>
                                 </ul>
+
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active was-validated " id="details" role="tabpanel" aria-labelledby="details-tab">
-
                                         <div class="list-group">
                                             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                                                 <div class="d-flex w-100 justify-content-between">
@@ -906,32 +1082,26 @@
                                                 </div>
 
                                                 <div class="mb-1">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                        <label class="form-check-label" for="defaultCheck1">
-                                                      Papas a la francesa
-                                                    </label>
+                                                    <!-- checks inline -->
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Yucas</label>
                                                     </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                                        <label class="form-check-label" for="defaultCheck2">
-                                                      Yucas fritas
-                                                    </label>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Papas</label>
                                                     </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                                                        <label class="form-check-label" for="defaultCheck3">
-                                                      Aros de cebolla
-                                                    </label>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                                                        <label class="form-check-label" for="inlineCheckbox3">Aros (Agotado)</label>
                                                     </div>
                                                 </div>
-
-                                                <small>Donec id elit non mi porta.</small>
+                                                <small>Incluidos en el precio</small>
                                             </a>
                                             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                                                 <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1">Salsas</h5>
-                                                    <small class="text-muted">En tu hamburguesa</small>
+                                                    <small class="text-muted">Selecciona Max. 1</small>
                                                 </div>
 
                                                 <div class="mb-1">
@@ -956,7 +1126,7 @@
                                                     </div>
                                                 </div>
 
-                                                <small class="text-muted">Donec id elit non mi porta.</small>
+                                                <small class="text-muted">Incluidos en el precio</small>
                                             </a>
                                             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                                                 <div class="d-flex w-100 justify-content-between">
@@ -983,85 +1153,92 @@
                                             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                                                 <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1">Extras</h5>
-                                                    <small class="text-muted">3 days ago</small>
+                                                    <small class="text-muted">Selecciona a tu gusto</small>
                                                 </div>
                                                 <div class="mb-1">
-                                                    <!-- checks inline -->
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                        <label class="form-check-label" for="inlineCheckbox1">Yucas</label>
+
+                                                    <div class="form-row">
+                                                        <div class="col">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                              Papas a la francesa
+                                                            </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="form-check-label" for="defaultCheck1">$ 5.000</label>
+                                                        </div>
                                                     </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">Papas</label>
+
+                                                    <div class="form-row">
+                                                        <div class="col">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                                <label class="form-check-label" for="defaultCheck2">
+                                                              Yucas fritas
+                                                            </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="form-check-label" for="defaultCheck1">$ 4.500</label>
+                                                        </div>
                                                     </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                                                        <label class="form-check-label" for="inlineCheckbox3">Aros (disabled)</label>
+
+
+
+                                                    <div class="form-row">
+                                                        <div class="col">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                                <label class="form-check-label" for="defaultCheck3">
+                                                              Aros de cebolla
+                                                            </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="form-check-label" for="defaultCheck1">$ 4.500</label>
+                                                        </div>
                                                     </div>
+
+
                                                 </div>
-                                                <small class="text-muted">Donec id elit non mi porta.</small>
+                                                <small class="text-muted">Valor adicional</small>
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="tab-pane fade " id="review" role="tabpanel" aria-labelledby="review-tab">
+
                                         <div class="card mb-4">
                                             <div class="card-header border-0">
-                                                <p>"Best product item and taste very fast and excellent packaging I am loving it. Thats awesome set for packaging with sppon and fork."</p>
+                                                <ul class="list-group list-group-flush">
+                                                    <li>Delicioso pan fresco de la casa</li>
+                                                    <li>Carne de res de primera</li>
+                                                    <li>Verduras locales</li>
+                                                </ul>
                                             </div>
                                             <div class="card-footer">
                                                 <div class="media">
-                                                    <figure class="avatar avatar-40 mr-2">
-                                                        <img src="assets/img/user3.png" alt="Generic placeholder image">
-                                                    </figure>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-1">Johnson Johny</h6>
-                                                        <p class="text-mute small">
-                                                            Vennama, USA | <span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>
-                                                            <span class="text-warning icon_star"></span> 5.0 </p>
-                                                    </div>
+                                                    <h5>Ingredientes locales de primera</h5>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="card mb-4">
                                             <div class="card-header border-0">
-                                                <p>"Working with John is awesome and we have done several project together. He will surely surprise what outcome will be delivered."</p>
+                                                <ul class="list-group list-group-flush">
+                                                    <li>Solo productos locales</li>
+                                                    <li>Apoyamos hogares vulnerables</li>
+                                                </ul>
                                             </div>
                                             <div class="card-footer">
                                                 <div class="media">
-                                                    <figure class="avatar avatar-40 mr-2">
-                                                        <img src="assets/img/user5.png" alt="Generic placeholder image">
-                                                    </figure>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-1">Maxi Artisty </h6>
-                                                        <p class="text-mute small">
-                                                            Vennama, USA | <span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span>
-                                                            <span class="text-warning icon_star"></span> 4.5 </p>
-                                                    </div>
+                                                    <h5>Socialmente responsables</h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-4">
-                                            <div class="card-body p-0">
-                                                <textarea class="form-control border-0" rows="3" placeholder="Enter your feedback..."></textarea>
-                                            </div>
-                                            <div class="card-footer">
-                                                <h5><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span><span class="text-warning icon_star"></span></h5>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="media">
-                                                    <figure class="avatar avatar-40 mr-2">
-                                                        <img src="assets/img/user1.png" alt="Generic placeholder image">
-                                                    </figure>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-1">you</h6>
-                                                        <p class="text-mute small">Vennama, USA </p>
-                                                    </div>
-                                                    <button class="btn btn-44 btn-default" type="button"><i class="material-icons">send</i></button>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -1140,8 +1317,6 @@
                     <a href="https://dribbble.com/maxartkiller" class="btn btn-link px-2" target="_blank"><span class="social_dribbble"></span></a>
                 </div>
             </div>
-            <hr>
-            <p class="text-center">For the humans by the human, <span class="text-mute">Hand Crafted by <a href="https://maxartkiller.com/" target="_blank">Maxartkiller</a> with </span><span class="text-danger">❤</span></p>
         </div>
     </footer>
     <!-- Footer ends -->
@@ -1164,7 +1339,7 @@
                 <span class="badge badge-success badge-cart">2</span>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="search-tab" data-toggle="tab" href="./track.html" role="tab" aria-controls="track" aria-selected="false">
+                <a class="nav-link" id="search-tab" data-toggle="modal" data-target="#modalLocation" href="#location" role="tab" aria-controls="track" aria-selected="false">
                     <i class="material-icons">room</i>
                     <small class="sr-only">track</small>
                 </a>
