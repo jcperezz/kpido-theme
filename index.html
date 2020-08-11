@@ -542,6 +542,66 @@
         </div>
         <!-- Modal on-site Ends Here -->
 
+
+        <!-- Modal on-site Starts Here -->
+        <div class="modal fade" id="modalBooking" tabindex="-1" role="dialog" aria-labelledby="modalOnSite" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Reservar mesa</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container mb-4">
+                            <div class="card border-0 shadow-light mb-4">
+                                <div class="card-body">
+                                    <p>Realiza una reserva, valido hasta dos horas antes</p>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre (Opcional)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput2">Número de Asistentes</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="daterangeadminux2">Fecha</label>
+                                        <div id="daterangeadminux2" class="form-control ">
+                                            <span></span> <i class="text-default cal-icon float-right icon_calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Método de pago</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                  <option>Efectivo</option>
+                                                  <option>Tarjeta débito</option>
+                                                  <option>Tarjeta crédito</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Comentarios (Opcional)</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="card-body text-center">
+                            <a href="#cart" data-dismiss="modal" data-toggle="modal" data-target="#modalCart" class="btn btn-secondary default-shadow">Regresar</a>
+                            <a id="confirmLink" href="#" class="btn btn-default default-shadow" onclick="window.open( './whatsapp.html', '_blank'); window.open( './thankyou.html', '_self');">Finalizar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal on-site Ends Here -->
+
+
+
         <!-- Modal Confirm -->
         <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -646,8 +706,10 @@
 
                     </div>
                     <div class="modal-footer">
-                        <a href="#cart" data-dismiss="modal" data-toggle="modal" data-target="#modalCart" class="btn btn-secondary default-shadow">Regresar</a>
-                        <a id="confirmLink" href="#" class="btn btn-default default-shadow" onclick="window.open( './whatsapp.html', '_blank'); window.open( './thankyou.html', '_self');">Finalizar</a>
+                        <div class="card-body text-center">
+                            <a href="#cart" data-dismiss="modal" data-toggle="modal" data-target="#modalCart" class="btn btn-secondary default-shadow">Regresar</a>
+                            <a id="confirmLink" href="#" class="btn btn-default default-shadow" onclick="window.open( './whatsapp.html', '_blank'); window.open( './thankyou.html', '_self');">Finalizar</a>
+                        </div>
                     </div>
 
                 </div>
@@ -1071,12 +1133,7 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3">
-        <!--
-        <div class="container section-100">
-            <h1>One<span>UI</span><span>UX</span></h1>
-            <p class="text-mute mt-4">Multipurpose multipages Mobile HTML template with large number of components and ready to use elements sections. This template build with Bootstrap 4, HTML, CSS, SCSS styling and JQuery.</p>
-        </div>
-        -->
+
         <hr class="mt-0">
         <div class="container-fluid">
             <div class="row justify-content-center">
@@ -1088,12 +1145,15 @@
                     <a href="https://dribbble.com/maxartkiller" class="btn btn-link px-2" target="_blank"><span class="social_dribbble"></span></a>
                 </div>
             </div>
+            <hr>
+            <p class="text-center">Tu menú virtual, <span class="text-mute">fue creado por <a href="https://www.kpido.co/" target="_blank">Kpido.co</a> con </span><span class="text-danger">❤</span></p>
         </div>
     </footer>
     <!-- Footer ends -->
 
+
     <!-- sticky footer tabs -->
-    <div class="footer-tabs footer-spaces border-top text-center shadow footer-fill">
+    <div class="footer-tabs border-top text-center">
 
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item">
@@ -1120,8 +1180,14 @@
     <!-- sticky footer tabs ends -->
 
 
+
     <!-- scroll to top button -->
     <button type="button" class="btn btn-default default-shadow scrollup bottom-right position-fixed btn-44"><span class="arrow_carrot-up"></span></button>
+    <!-- scroll to top button ends-->
+
+
+    <!-- scroll to top button -->
+    <button type="button" title="Reservar" data-dismiss="modal" data-toggle="modal" data-target="#modalBooking" class="rtl btn btn-default default-shadow booking bottom-left"><span class="icon_book_alt"></span></button>
     <!-- scroll to top button ends-->
 
 

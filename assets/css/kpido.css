@@ -11,3 +11,37 @@
 .modal {
     overflow: auto !important;
 }
+
+.btn.booking {
+    position: fixed;
+    top: 85px;
+    bottom: auto;
+    right: -10px;
+    /* border-radius: 20px 0 0 20px; */
+    padding: 7px 15px;
+}
+
+.btn.booking span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -ms-animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+.btn.booking.active {
+    right: 75px;
+}
+
+.rtl .btn.booking {
+    right: auto;
+    left: -5px;
+    /* border-radius: 0 20px 20px 0; */
+}
+
+.rtl .btn.booking.active {
+    right: auto;
+    left: 65px;
+}
