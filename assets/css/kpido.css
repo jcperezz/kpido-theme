@@ -25,10 +25,10 @@
     display: inline-block;
     vertical-align: middle;
     margin: 5px;
-    animation: rotation 2s infinite linear;
-    -moz-animation: rotation 2s infinite linear;
-    -ms-animation: rotation 2s infinite linear;
-    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 4s both linear;
+    -moz-animation: rotation 4s both linear;
+    -ms-animation: rotation 4s both linear;
+    -webkit-animation: rotation 4s both linear;
 }
 
 .btn.booking.active {
